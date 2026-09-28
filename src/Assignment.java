@@ -46,3 +46,10 @@ public class Assignment
         obj.assign();
     }
 }
+
+//Operator	Meaning
+//&=	a = a & b (bitwise AND)
+//|=	a = a | b (bitwise OR)
+//^=	a = a ^ b (bitwise XOR)
+//<<=	a = a << b (left shift)
+//>>=	a = a >> b (right shift)
