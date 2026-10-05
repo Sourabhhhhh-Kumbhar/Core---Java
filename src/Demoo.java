@@ -4,8 +4,8 @@ import java.util.List;
 public class Demoo {
     public static void main(String[] args){
 
-//    	Collection<Integer> nums= new ArrayList<Integer>();
-//  	Collection nums=new ArrayList();
+//    	Collection<Integer> nums= new ArrayListtttt<Integer>();
+//  	Collection nums=new ArrayListtttt();
         List<Integer> nums=new ArrayList<Integer>();
         nums.add(6);
         nums.add(5);
