@@ -1,74 +1,60 @@
-public class BasicQueue
-{
+class Queue {
     int[] queue;
     int front;
     int rear;
     int size;
 
-    BasicQueue(int size)
-    {
+    Queue(int size) {
         this.size = size;
         queue = new int[size];
         front = 0;
         rear = -1;
     }
 
-    //EnQueue
-    void enqueue(int value)
-    {
-        if(rear == size - 1)
-        {
+    // Enqueue
+    void enqueue(int value) {
+        if (rear == size - 1) {
             System.out.println("Queue is full");
-        }
-        else {
+        } else {
             rear++;
             queue[rear] = value;
-            System.out.println(value + "Inserted");
+            System.out.println(value + " inserted");
         }
     }
 
-    //Dequeue
-    void dequeue(int value)
-    {
-        if(front > rear)
-        {
+    // Dequeue
+    void dequeue() {
+        if (front > rear) {
             System.out.println("Queue is empty");
-        }
-        else
-        {
-            System.out.println(queue[front] + "removed");
+        } else {
+            System.out.println(queue[front] + " removed");
             front++;
         }
     }
 
-    //Display
-    void display()
-    {
-        if(front > rear)
-        {
+    // Display
+    void display() {
+        if (front > rear) {
             System.out.println("Queue is empty");
-        }
-        else {
-            for(int i = front; i <= rear; i++)
-            {
+        } else {
+            for (int i = front; i <= rear; i++) {
                 System.out.print(queue[i] + " ");
             }
             System.out.println();
         }
     }
 
-    public static void main(String[]args)
-    {
-        BasicQueue obj = new BasicQueue(5);
+    public static void main(String[] args) {
+        Queue q = new Queue(5);
 
-        obj.enqueue(1);
-        obj.enqueue(2);
-        obj.enqueue(3);
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
 
-        obj.display();
+        q.display();
 
-        obj.display();
+        q.dequeue();
 
-        obj.display();
+        q.display();
     }
 }
