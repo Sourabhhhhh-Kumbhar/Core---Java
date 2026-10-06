@@ -27,7 +27,7 @@ public class BasicList
         names.set(1, "Rohit");
 
         // remove() is used to remove an element
-        names.remove("Sneha");
+        names.remove("Aryaaaa");
 
         // size() returns the total number of elements
         System.out.println("Size of List: " + names.size());
