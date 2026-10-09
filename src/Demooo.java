@@ -34,7 +34,7 @@ public class Demooo
     public static void main(String[] args)
     {
         //Set<Integer> nums = new HashSet<Integer>();
-        //Set<Integer> nums = new TreeSet<Integer>();
+        //Set<Integer> nums = new DemoTreeSet<Integer>();
 
         Collection<Integer> nums = new TreeSet<>();
         nums.add(62);
