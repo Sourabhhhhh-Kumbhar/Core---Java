@@ -9,8 +9,10 @@ import java.util.*;
  *   Set   -> duplicates NAHI allowed              (HashSet)
  *   Map   -> key-value pairs, key unique          (HashMap)
  */
-public class Collection {
-    public static void main(String[] args) {
+public class Collection
+{
+    public static void main(String[] args)
+    {
 
         // ===== 1. ArrayList (List) =====
         List<String> names = new ArrayList<>();
@@ -51,7 +53,8 @@ public class Collection {
         System.out.println("   Key 999     : " + students.getOrDefault(999, "Not Found"));
 
         // Map ko loop karna
-        for (Map.Entry<Integer, String> e : students.entrySet()) {
+        for (Map.Entry<Integer, String> e : students.entrySet())
+        {
             System.out.println("   " + e.getKey() + " -> " + e.getValue());
         }
 
@@ -61,7 +64,8 @@ public class Collection {
         String sentence = "java is fun and java is powerful";
         Map<String, Integer> count = new HashMap<>();
 
-        for (String word : sentence.split(" ")) {
+        for (String word : sentence.split(" "))
+        {
             count.put(word, count.getOrDefault(word, 0) + 1);
         }
         System.out.println("4) Word count  : " + count);
